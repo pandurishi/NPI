@@ -1,0 +1,131 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noble Path India</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            saffron: '#FF9933',
+            green: '#138808',
+            navy: '#000080',
+            white: '#FFFFFF'
+          },
+          animation: {
+            fadeIn: "fadeIn 2s ease-in forwards",
+            float: "float 3s ease-in-out infinite"
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: 0 },
+              '100%': { opacity: 1 }
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .hero-bg {
+      background: linear-gradient(to right, #FF9933, #FFFFFF, #138808);
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-inter">
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-navy animate-fadeIn"> Noble Path India</h1>
+      <nav class="space-x-6">
+        <a href="#about" class="text-gray-600 hover:text-saffron">About</a>
+        <a href="#vision" class="text-gray-600 hover:text-saffron">Vision</a>
+        <a href="#newsletters" class="text-gray-600 hover:text-saffron">Newsletters</a>
+        <a href="#jobs" class="text-gray-600 hover:text-saffron">Jobs</a>
+        <a href="#contact" class="text-gray-600 hover:text-saffron">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero-bg text-white py-20 text-center">
+      <div class="max-w-4xl mx-auto animate-fadeIn">
+        <h2 class="text-4xl font-bold mb-4" style="color: #054187;">
+          Empowering India's Workforce Ethically
+        </h2>
+        <p class="text-lg" style="color: #054187;">A hybrid organization improving employment quality, dignity of labour, and future-readiness for all sectors across India.</p>
+      </div>
+    </section>
+
+    <section id="about" class="py-16 px-6 md:px-20">
+      <div class="max-w-5xl mx-auto">
+        <h3 class="text-2xl font-bold mb-4 text-saffron flex items-center gap-2">
+          <i class="ph ph-lightbulb"></i> About Us
+        </h3>
+        <p class="text-lg text-gray-700 leading-relaxed">
+          Noble Path India is an emerging hybrid organization and consulting initiative dedicated to revolutionizing the Indian employment ecosystem. We bridge the gap between government, industry, and the workforce while upholding ethics, dignity, and human capability. Our goal is to create a balanced and ethical job ecosystem across all employment levels.
+        </p>
+      </div>
+    </section>
+
+    <section id="vision" class="bg-gray-100 py-16 px-6 md:px-20">
+      <div class="max-w-5xl mx-auto">
+        <h3 class="text-2xl font-bold mb-4 text-green flex items-center gap-2">
+          <i class="ph ph-eye"></i> Our Vision
+        </h3>
+        <ul class="list-disc list-inside space-y-2 text-gray-700">
+          <li>Conducting industry, job, and employment analysis</li>
+          <li>Promoting work-life balance and ethical practices</li>
+          <li>Training youth for future-ready roles across all sectors</li>
+          <li>Preventing societal financial frauds via early awareness</li>
+          <li>Respecting dignity at all job levels from labour to leadership</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="newsletters" class="py-16 px-6 md:px-20">
+      <div class="max-w-5xl mx-auto">
+        <h3 class="text-2xl font-bold mb-4 text-navy flex items-center gap-2">
+          <i class="ph ph-newspaper"></i> Newsletters
+        </h3>
+        <p class="text-gray-600">(This section will be regularly updated with latest insights and job market newsletters.)</p>
+        <div class="border-2 border-dashed border-gray-300 p-8 mt-6 text-center text-gray-500">
+          Newsletter content goes here.
+        </div>
+      </div>
+    </section>
+
+    <section id="jobs" class="bg-gray-100 py-16 px-6 md:px-20">
+      <div class="max-w-5xl mx-auto">
+        <h3 class="text-2xl font-bold mb-4 text-saffron flex items-center gap-2">
+          <i class="ph ph-briefcase"></i> Job Board
+        </h3>
+        <p class="text-gray-600">(Postings will be added here manually to guide applicants.)</p>
+        <div class="border-2 border-dashed border-gray-300 p-8 mt-6 text-center text-gray-500">
+          Job listings will appear here.
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-16 px-6 md:px-20">
+       <center><p class="mt-1">Contact <strong>founder@noblepathindia.solutions</strong></p></center>
+      
+    </section>
+  </main>
+
+  <footer class="bg-white text-center py-6 mt-10 text-sm border-t">
+    <p>© 2025 Y B Rishi. All rights reserved. This document and its contents are proprietary and confidential. No part may be copied, shared, or used without permission.</p>
+    <p class="mt-1">Powered by <strong>NoblePathIndia.Solutions</strong></p>
+  </footer>
+</body>
+</html>
